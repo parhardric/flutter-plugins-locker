@@ -17,7 +17,7 @@ let package = Package(
     targets: [
         .target(
             name: "flutter_locker",
-            dependencies: ["Locker"],
+            dependencies: [.product(name: "Locker", package: "Locker")],
             resources: []
         )
     ]
